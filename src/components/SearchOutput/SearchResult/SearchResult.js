@@ -5,13 +5,11 @@ const SearchResult = (props) => {
     console.log(props);
     return (
         <article className={classes.Result}>
-            <h1>Title: {props.title}</h1>
-            <h3 className={classes.Author}>
-                {props.authors && props.authors.map((author, index) => (
-                    <p key={index}>{author}</p>
-                ))}
-            </h3>
-            <a href={props.link} rel="noopener noreferrer" target="_blank">{props.link}</a>
+            <h1>City: {props.city}</h1>
+            <h2> Current Weather </h2>
+            <h3> {props.tempf} F </h3>
+            <h3> {props.tempc} C </h3>
+            <img src = {props.iconlink}> </img>
         </article>
     );
 }

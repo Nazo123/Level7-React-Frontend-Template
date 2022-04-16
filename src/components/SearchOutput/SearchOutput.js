@@ -20,10 +20,10 @@ const SearchOutput = (props) => {
             props.results.map((result, index) => {
                 return (
                     <SearchResult
-                        key={index}
-                        title={result.title}
-                        authors={result.authors}
-                        link={result.link}
+                        city={result.location.name}
+                        tempf={result.current.temp_f}
+                        tempc={result.current.temp_c}
+                        iconlink={result.condition.icon}
                     />
                 );
             })
