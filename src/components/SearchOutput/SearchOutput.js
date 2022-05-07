@@ -23,7 +23,6 @@ const SearchOutput = (props) => {
                         city={result.location.name}
                         tempf={result.current.temp_f}
                         tempc={result.current.temp_c}
-                        iconlink={result.condition.icon}
                     />
                 );
             })
